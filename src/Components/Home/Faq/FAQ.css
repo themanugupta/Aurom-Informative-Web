@@ -1,0 +1,12 @@
+.ans {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .ans-open {
+    max-height: 200px; /* Adjust this value based on the content's expected height */
+    opacity: 1;
+  }
+  
