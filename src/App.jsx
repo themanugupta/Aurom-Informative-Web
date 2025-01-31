@@ -33,9 +33,7 @@ function App() {
 <Route path='/:Ourlistener' element={<Listenersdescription/>} />
 <Route path='/Blogsdesc' element={<Blogsdescription/>} />
 <Route path='/BecomeListener' element={<BecomeListener/>} />
-   {/* <OurListeners/> */}
-  {/* <OurBlogs/> */}
-  {/* <Listenersdescription/> */}
+  
   </Routes>
   </BrowserRouter>
 
