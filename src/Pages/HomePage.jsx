@@ -63,7 +63,7 @@ const handleScrollToTop = () => {
    <Onestopsolution/>
    <Caringlisteners/>
    <Usersay/>
-   <Appfeatured/>
+   {/* <Appfeatured/> */}
    <Oursupprtiveblogs/>
    <Firstrecharge/>
    <FAQ/>

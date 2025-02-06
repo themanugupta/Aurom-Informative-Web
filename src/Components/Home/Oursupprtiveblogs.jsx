@@ -63,7 +63,7 @@ function Oursupprtiveblogs() {
       {isLgScreen ? (
         <div className="below flex justify-center items-center py-[80px] gap-[24px]">
           {blogData.map((blog, index) => (
-            <div key={index} className="card rounded-[24px] w-[25%] lg:h-[637px] md:h-[480px] border-[1px] overflow-hidden border-[#464646]">
+            <div  key={index} className="card rounded-[24px] w-[25%] lg:h-[637px] md:h-[480px] border-[1px] overflow-hidden border-[#464646]">
               <img className='h-[300px] w-full object-cover' src={blog.image} alt="" />
               <div className="bootm text-[#d9d9d9] lg:px-[24px] md:px-4 py-[40px]">
                 <h2 className='lg:text-[22px] md:text-[18px] pb-[16px] font-bold'>{blog.title}</h2>
@@ -71,9 +71,9 @@ function Oursupprtiveblogs() {
                 <div className='pt-[40px] a bottom-4 flex w-[100%] justify-between items-center'>
                   <span className='lg:text-[20px] w-[80%] line-clamp-3 md:text-[16px]'>{blog.category}</span>
                   <div className="btn lg:text-[28px] md:text-[12px] bg-white text-[#111111] hover:shadow-[0_0_30px_15px_rgba(217,217,217,0.2)] shadow-[0_0_17px_7px_rgba(217,217,217,0.2)] font-semibold px-[2px] py-[2px] duration-300 cursor-pointer rounded-full">
-                    <div className="bg-white lg:p-2 md:p-1 rounded-full">
+                    <Link to="/Blogsdesc" className="bg-white lg:p-2 md:p-1 rounded-full">
                       <GoArrowRight />
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
