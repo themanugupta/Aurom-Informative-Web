@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GoArrowRight } from "react-icons/go";
 import { motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const blogData = [
   {
@@ -92,9 +92,9 @@ function Oursupprtiveblogs() {
                   <div className='pt-[40px] absolute w-[90%] bottom-9 flex justify-between items-center'>
                     <span className='lg:text-[20px] w-[70%] md:text-[16px]'>{blog.category}</span>
                     <div className="btn lg:text-[28px]  md:text-[12px] bg-white text-[#111111] shadow-[0_0_17px_7px_rgba(217,217,217,0.2)] font-semibold px-[2px] py-[2px] duration-300 cursor-pointer rounded-full">
-                      <div className="bg-white p-1 rounded-full">
+                      <Link to="/Blogsdesc" className="bg-white p-1 rounded-full">
                         <GoArrowRight />
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
