@@ -32,7 +32,7 @@ function SafeSpace() {
         isLgScreen ? (<>
           <img className='w-full h-full object-cover' src='BGimage.png' alt='' />
       <div className='text absolute lg:gap-12 sm:gap-8 lg:top-28 sm:top-10 flex flex-col justify-center items-center'>
-        <div className='lg:text-[72px] md:text-[35px] text-[#d9d9d9]   flex w-[100%] font-semibold overflow-hidden'>
+        <div className='lg:text-[68px] md:text-[35px] text-[#d9d9d9]   flex w-[100%] font-semibold overflow-hidden'>
           <div className='w-[65%] mr-1 text-[#808080]'>
             Your Safe Space to
           </div>

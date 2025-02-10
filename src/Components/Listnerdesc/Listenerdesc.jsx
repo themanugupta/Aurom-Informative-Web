@@ -6,6 +6,8 @@ function Listenerdesc() {
   const data = location.state;
   console.log("Received data: ", data);
   const isLgScreen = window.innerWidth >= 1024; // Check if the screen size is large
+
+
   const listeners = [
     {
       name: data.name,
@@ -15,10 +17,8 @@ function Listenerdesc() {
       reviews: 20,
       experience: " 20+ Hrs",
       description: data.description,
-      image: data.profile,
+      image: data.image,
     },
-  
-
   ];
   return (
 //     <div className=' bg-[#111111] flex justify-center pt-[80px] '>

@@ -6,8 +6,8 @@ function Ourlistener() {
   const isLgScreen = window.innerWidth >= 1024; // Check if the screen size is large
 
 
-  const handleViewListenerDesc = () => {
-    navigate("/Listenerdesc");
+  const handleViewListenerDesc = ({data}) => {
+   navigate("/Ourlistener", { state: data });
   };
 
   const listeners = [
@@ -97,7 +97,7 @@ function Ourlistener() {
                 </div>
               </div>
               <div className="right gap-[16px]">
-                <span className='text-[24px] text-[#d9d9d9]'>{listener.name}</span>
+                <span className='text-[24px] text-[#d9d9d9]'>{listener?.name}</span>
                 <div className="star flex items-center py-[12px] gap-[12px]">
                   <img src="caringlistenerstar.svg" alt="Star" />
                   <span className='text-[18px] font-normal text-[#808080]'>{listener.rating}({listener.reviews})</span>
@@ -113,8 +113,8 @@ function Ourlistener() {
             </div>
             <div className="below flex justify-between items-center">
               <span className='text-[20px] font-medium text-[#d9d9d9]'>Exp-{listener.experience}</span>
-              <div onClick={handleViewListenerDesc} className={`text-[#111111] ${isLgScreen ?"text-[18px] px-[2px] py-[2px]" :" text-[15px] px-[2px]" } bg-[#d9d9d9] hover:bg-[#d9d9d9] hover:shadow-[0_0_28px_13px_rgba(217,217,217,0.2)] shadow-[0_0_17px_7px_rgba(217,217,217,0.2)] hover:text-[#111111] font-semibold  duration-300 cursor-pointer rounded-full bg-gradient-to-t from-transparent to-[#d9d9d9]`}>
-                <button className={` ${isLgScreen ? "px-6 py-3" : "px-4 py-1" }  rounded-full`} style={{ backgroundClip: 'padding-box' }}>
+              <div onClick={()=>handleViewListenerDesc({data:listener})} className={`text-[#111111] ${isLgScreen ?"text-[18px] px-[2px] py-[2px]" :" text-[15px] px-[2px]" } bg-[#d9d9d9] hover:bg-[#d9d9d9] hover:shadow-[0_0_28px_13px_rgba(217,217,217,0.2)] shadow-[0_0_17px_7px_rgba(217,217,217,0.2)] hover:text-[#111111] font-semibold  duration-300 cursor-pointer rounded-full bg-gradient-to-t from-transparent to-[#d9d9d9]`}>
+                <button className={` ${isLgScreen ? "px-6 py-3" : "px-4 py-3" }  rounded-full`} style={{ backgroundClip: 'padding-box' }}>
                   Connect Now
                 </button>
               </div>

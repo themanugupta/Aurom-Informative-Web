@@ -52,7 +52,7 @@ function Ourblogs() {
   <div className='pt-[40px] flex justify-between items-center'>
       <span className='text-[20px]'>{blog.category}</span>
       <div onClick={handleViewBlogDesc} className="btn text-[28px] bg-[#111111] hover:bg-[#d9d9d9] text-[#d9d9d9]  hover:shadow-[0_0_30px_15px_rgba(217,217,217,0.2)]  shadow-[0_0_17px_7px_rgba(217,217,217,0.2)]  hover:text-[#111111] font-semibold px-[2px] py-[2px] duration-300 cursor-pointer rounded-full  bg-gradient-to-t from-transparent to-[#d9d9d9]">
-<div className="bg-[#111111] hover:bg-[#d9d9d9] p-2 rounded-full" style={{ backgroundClip: 'padding-box' ,
+<div className="bg-[#111111] h-fit hover:bg-[#d9d9d9] p-2 rounded-full" style={{ backgroundClip: 'padding-box' ,
 // boxShadow: 'inset 0 0 20px rgba(217, 217, 217, 0.3)', 
 }}>
 <GoArrowRight />
