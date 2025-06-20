@@ -45,28 +45,34 @@ function Onestopsolution() {
             <div className="flex flex-col lg:text-[24px] md:text-[15px] gap-[12px]">
               <div className="flex items-center justify-start gap-[10px] ">
                 <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
-                <span className=" text-[#d9d9d9]">Complete Anonymity.</span>
-              </div>
-              <div className="flex items-center justify-start gap-[10px] ">
-                <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
-                <span className=" text-[#d9d9d9]">Safe Sharing.</span>
-              </div>
-              <div className="flex items-center justify-start gap-[10px] ">
-                <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
-                <span className="text-[#d9d9d9]">
-                  Communication in multiple languages
+                <span className=" text-[#d9d9d9]">
+                  Our human listeners are trained to listen, not lecture.
                 </span>
               </div>
               <div className="flex items-center justify-start gap-[10px] ">
                 <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
                 <span className=" text-[#d9d9d9]">
-                  Stress free Conversation.
+                  100% anonymous, private & encrypted conversations.
                 </span>
               </div>
               <div className="flex items-center justify-start gap-[10px] ">
                 <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
-                <span className=" text-[#d9d9d9]">Talk Anytime, Anywhere.</span>
+                <span className="text-[#d9d9d9]">
+                  {
+                    "Non-judgmental emotional support Backed by impact data (91.3% users report feeling better)"
+                  }
+                </span>
               </div>
+              <div className="flex items-center justify-start gap-[10px] ">
+                <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
+                <span className=" text-[#d9d9d9]">
+                  Improves sleep quality when used before bedtime
+                </span>
+              </div>
+              {/* <div className="flex items-center justify-start gap-[10px] ">
+                <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
+                <span className=" text-[#d9d9d9]">Talk Anytime, Anywhere.</span>
+              </div> */}
             </div>
           </div>
         </motion.div>

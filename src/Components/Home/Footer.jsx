@@ -71,7 +71,7 @@ function Footer() {
 
         <div className={`icons flex ${isLgScreen ? "gap-10" : "gap-4 mt-8"} `}>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=61576450115105"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -82,7 +82,7 @@ function Footer() {
             />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/aurom_app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -93,7 +93,7 @@ function Footer() {
             />
           </a>
           <a
-            href="https://www.twitter.com"
+            href="https://x.com/aurom_app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -104,7 +104,7 @@ function Footer() {
             />
           </a>
           <a
-            href="https://www.whatsapp.com"
+            href="https://wa.me/919958381397?text=Hi"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -115,7 +115,7 @@ function Footer() {
             />
           </a>
           <a
-            href="https://www.youtube.com"
+            href="https://www.youtube.com/@aurom_app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -125,7 +125,7 @@ function Footer() {
               alt="YouTube"
             />
           </a>
-          <a
+          {/* <a
             href="https://www.linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -135,7 +135,7 @@ function Footer() {
               src="linkdin.png"
               alt="LinkedIn"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

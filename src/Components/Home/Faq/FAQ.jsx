@@ -24,19 +24,19 @@ function FAQ() {
   // FAQ data
   const faqs = [
     {
-      question: "What is Aurom?",
+      question: " What is Aurom?",
       answer:
-        "Aurom is a platform designed to provide personalized audio experiences, offering various features for music and podcast lovers.",
+        "Aurom is a platform where you can talk to trained human listeners anytime — no judgment, no advice, just someone who truly hears you.",
     },
     {
-      question: " Is my identity kept private?",
+      question: " Who are the listeners?",
       answer:
-        "Aurom uses advanced algorithms to curate playlists and recommendations tailored to your preferences,Aurom is a platform where you can talk to empathetic listeners about your feelings and challenges, such as anxiety, loneliness, or breakups, in a safe and anonymous environment..",
+        "Our listeners are verified real people trained in active listening techniques. They’re selected and monitored for empathy, professionalism, and respect for user privacy.",
     },
     {
-      question: " What are the charges for using the service?",
+      question: " Is it really anonymous?",
       answer:
-        "Yes, Aurom offers a free tier with basic features and a premium tier for advanced functionalities.",
+        "Yes. You don’t need to share your name, identity, or personal details to use Aurom. Just enter login otp and start",
     },
     {
       question: " Are the listeners professionals?",
@@ -44,14 +44,29 @@ function FAQ() {
         "Aurom uses advanced algorithms to curate playlists and recommendations tailored to your preferences.",
     },
     {
-      question: "How do I become a listener?",
+      question: " Can I talk about anything?",
       answer:
-        "Aurom uses advanced algorithms to curate playlists and recommendations tailored to your preferences.",
+        "Yes — you can speak freely about anything on your mind: stress, loneliness, heartbreak, family pressure, work burnout, or just a rough day. Nothing is too small. Just be respectfull to listeners.",
     },
     {
-      question: "Can I request a specific listener for my session?",
+      question: "When can I call?",
       answer:
-        "Aurom uses advanced algorithms to curate playlists and recommendations tailored to your preferences.",
+        "You can use Aurom anytime — day or night. Especially when you need someone to talk to but can’t reach friends or family.",
+    },
+    {
+      question: "How long can I talk?",
+      answer:
+        "As long as you want but most most calls last between 10 to 30 minutes.",
+    },
+    {
+      question: "Is it free?",
+      answer:
+        "We offer only paid calls as we need to fairly treat our listeners. Some discounts may be available",
+    },
+    {
+      question: "What kind of support is not allowed?",
+      answer:
+        "Auron is not equipped for medical emergencies or crisis situations involving self-harm or harm to others. In such cases, we recommend contacting professional emergency services or a licensed therapist.",
     },
   ];
 

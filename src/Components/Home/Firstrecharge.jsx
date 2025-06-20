@@ -44,7 +44,7 @@ function Firstrecharge() {
                 <img
                   className=" lg:w-[196px] md:w-[120px]  object-cover"
                   src="appstore.svg"
-                  alt=""
+                  alt="https://apps.apple.com/in/app/aurom-you-matter/id6740231514"
                 />
               </div>
             </motion.div>
