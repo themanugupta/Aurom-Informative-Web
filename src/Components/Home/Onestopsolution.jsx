@@ -58,9 +58,13 @@ function Onestopsolution() {
               <div className="flex items-center justify-start gap-[10px] ">
                 <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
                 <span className="text-[#d9d9d9]">
-                  {
-                    "Non-judgmental emotional support Backed by impact data (91.3% users report feeling better)"
-                  }
+                  {"Non-judgmental emotional support "}
+                </span>
+              </div>
+              <div className="flex items-center justify-start gap-[10px] ">
+                <img className="w-[18px] h-[18px]" src="check-01.png" alt="" />
+                <span className="text-[#d9d9d9]">
+                  {"Backed by impact data (91.3% users report feeling better)"}
                 </span>
               </div>
               <div className="flex items-center justify-start gap-[10px] ">
