@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
+import { useParams } from 'react-router-dom';
 
 function Blogsdesc() {
       const [isLgScreen, setIsLgScreen] = useState(window.innerWidth >= 1024);
+      const params = useParams();
+
+      console.log("params", params);
   
   return (
     <div className={`lg:w-[60%] ${isLgScreen ? "px-0" : "px-5" } py-[100px] text-[#d9d9d9] flex flex-col justify-center  mx-auto gap-[60px]`}>

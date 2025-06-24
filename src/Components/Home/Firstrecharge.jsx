@@ -37,11 +37,23 @@ function Firstrecharge() {
               </span>
               <div className="img flex lg:mt-16 md:mt-10 lg:gap-10 md:gap-5 ">
                 <img
+                onClick={()=>{
+                  window.open(
+                    "https://play.google.com/store/apps/details?id=com.myhearspace&pcampaignid=web_share&hl=en_IN",
+                    "_blank"
+                  );
+                }}
                   className=" lg:w-[196px] md:w-[120px] object-fill"
                   src="playstore.svg"
                   alt=""
                 />
                 <img
+                onClick={()=>{
+                  window.open(
+                    "https://apps.apple.com/in/app/aurom-you-matter/id6740231514",
+                    "_blank"
+                  );
+                }}
                   className=" lg:w-[196px] md:w-[120px]  object-cover"
                   src="appstore.svg"
                   alt="https://apps.apple.com/in/app/aurom-you-matter/id6740231514"

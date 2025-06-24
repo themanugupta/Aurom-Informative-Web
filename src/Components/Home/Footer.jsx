@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [isLgScreen, setIsLgScreen] = useState(window.innerWidth >= 1024);
+
+
 
   // Update the screen size state on window resize
   useEffect(() => {
@@ -12,6 +15,9 @@ function Footer() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+
+
 
   return (
     <div className="relative">
@@ -62,10 +68,21 @@ function Footer() {
             className="text-[#d9d9d9] flex 
             lg:gap-8 lg:text-[24px] md:gap-4 md:text-[18px]"
           >
-            <span>Home</span>
-            <span>Our Listeners</span>
-            <span>Blogs</span>
-            <span>Become a Listener</span>
+            <Link to={"/"}>
+              <span>Home</span>
+            </Link>
+            <Link to="/OurListeners">
+              <span>Our Listeners</span>
+            </Link>
+            {/* <Link to="/OurBlogs">
+              <span>Our Story</span>
+            </Link> */}
+            <Link to="/OurBlogs">
+              <span>Blogs</span>
+            </Link>
+            <Link to="/BecomeListener">
+              <span>Become a Listener</span>
+            </Link>
           </div>
         )}
 

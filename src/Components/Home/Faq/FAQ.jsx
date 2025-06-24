@@ -66,7 +66,7 @@ function FAQ() {
     {
       question: "What kind of support is not allowed?",
       answer:
-        "Auron is not equipped for medical emergencies or crisis situations involving self-harm or harm to others. In such cases, we recommend contacting professional emergency services or a licensed therapist.",
+        "Aurom is not equipped for medical emergencies or crisis situations involving self-harm or harm to others. In such cases, we recommend contacting professional emergency services or a licensed therapist.",
     },
   ];
 
