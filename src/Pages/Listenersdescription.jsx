@@ -25,7 +25,9 @@ function Listenersdescription() {
                 "_blank"
               );
             }}
-            className={` ${isLgScreen ? "w-[42px]" : "w-[30px]"}`}
+            className={` cursor-pointer  ${
+              isLgScreen ? "w-[42px]" : "w-[30px]"
+            }`}
             src="sm-playstore.svg"
             alt=""
             srcset=""
@@ -38,7 +40,7 @@ function Listenersdescription() {
               "_blank"
             );
           }}
-          className="playstore mt-3  text-white   rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white"
+          className="playstore mt-3  cursor-pointer text-white   rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white"
         >
           <img
             className={` ${isLgScreen ? "w-[42px]" : "w-[30px]"}`}

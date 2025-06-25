@@ -21,31 +21,46 @@ function HomePage() {
     const [isLgScreen, setIsLgScreen] = useState(window.innerWidth >= 1024);
   
   const DownloadButton = useCallback(() => {
-    return   <div className="downloadsbtns fixed top-52 gap-4 right-5 z-50 ">
-    <div  onClick={()=>{
-      window.open(
-        "https://play.google.com/store/apps/details?id=com.myhearspace&pcampaignid=web_share&hl=en_IN",
-        "_blank"
-      );
-    }} className="playstore text-white   rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white ">
-                            <img className={` ${isLgScreen ? "w-[42px]" : "w-[30px]" }`} src="sm-playstore.svg" alt="" srcset="" />
-                      
-                        
-    
-                        </div>
-                        <div  onClick={()=>{
-                          window.open(
-                            "https://apps.apple.com/in/app/aurom-you-matter/id6740231514",
-                            "_blank"
-                          );
-                        }} className="playstore mt-3  text-white   rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white">
-                            <img className={` ${isLgScreen ? "w-[42px]" : "w-[30px]" }`} src="sm-apple.svg" alt="" srcset="" />
-                      
-                        
-    
-                        </div>
-    
-    </div>
+    return (
+      <div className="downloadsbtns fixed top-52 gap-4 right-5 z-50 ">
+        <div
+          onClick={() => {
+            window.open(
+              "https://play.google.com/store/apps/details?id=com.myhearspace&pcampaignid=web_share&hl=en_IN",
+              "_blank"
+            );
+          }}
+          className="playstore text-white  cursor-pointer rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white "
+        >
+          <img
+            className={` cursor-pointer ${
+              isLgScreen ? "w-[42px]" : "w-[30px]"
+            }`}
+            src="sm-playstore.svg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div
+          onClick={() => {
+            window.open(
+              "https://apps.apple.com/in/app/aurom-you-matter/id6740231514",
+              "_blank"
+            );
+          }}
+          className="playstore mt-3 cursor-pointer  text-white   rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white"
+        >
+          <img
+            className={` cursor-pointer ${
+              isLgScreen ? "w-[42px]" : "w-[30px]"
+            }`}
+            src="sm-apple.svg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+    );
   
   })
 

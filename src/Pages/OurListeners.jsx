@@ -19,21 +19,30 @@ function OurListeners() {
           
     
     const DownloadButton = useCallback(() => {
-      return   <div className="downloadsbtns fixed top-52 gap-4 right-5 z-50 ">
-      <div  className="playstore text-white    rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white ">
-                              <img className={` ${isLgScreen ? "w-[42px]" : "w-[30px]" }`} src="sm-playstore.svg" alt="" srcset="" />
-                        
-                          
-      
-                          </div>
-                          <div  className="playstore mt-3  text-white    rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white">
-                              <img className={` ${isLgScreen ? "w-[42px]" : "w-[30px]" }`} src="sm-apple.svg" alt="" srcset="" />
-                        
-                          
-      
-                          </div>
-      
-      </div>
+      return (
+        <div className="downloadsbtns fixed top-52 gap-4 right-5 z-50 ">
+          <div className="playstore text-white    rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white ">
+            <img
+              className={` cursor-pointer ${
+                isLgScreen ? "w-[42px]" : "w-[30px]"
+              }`}
+              src="sm-playstore.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div className="playstore mt-3  text-white    rounded-[30px] shadow-[0_0_15px_6px_rgba(217,217,217,0.2)] border-white">
+            <img
+              className={` cursor-pointer ${
+                isLgScreen ? "w-[42px]" : "w-[30px]"
+              }`}
+              src="sm-apple.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      );
     
     })
   

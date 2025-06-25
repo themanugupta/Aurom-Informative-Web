@@ -38,11 +38,7 @@ function FAQ() {
       answer:
         "Yes. You don’t need to share your name, identity, or personal details to use Aurom. Just enter login otp and start",
     },
-    {
-      question: " Are the listeners professionals?",
-      answer:
-        "Aurom uses advanced algorithms to curate playlists and recommendations tailored to your preferences.",
-    },
+  
     {
       question: " Can I talk about anything?",
       answer:

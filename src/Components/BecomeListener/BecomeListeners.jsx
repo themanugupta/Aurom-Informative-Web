@@ -14,6 +14,14 @@ function BecomeListeners() {
   
       return () => window.removeEventListener('resize', handleResize); // Cleanup on component unmount
     }, []);
+      useEffect(() => {
+                const handleScrollToTop = () => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top with smooth animation
+              };
+              handleScrollToTop()
+              
+            
+              }, [])
   
   return (
     <div>
