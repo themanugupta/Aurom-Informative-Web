@@ -94,7 +94,7 @@ function Firstrecharge() {
           />
 
           {/* Content Wrapper */}
-          <div className="relative z-10 flex flex-col w-full justify-center items-center">
+          <div className="content relative z-10 flex flex-col w-full justify-center items-center">
             {/* Left Section */}
             <div className="flex flex-col items-center space-y-4">
               <span className="text-[22px] px-5 font-semibold  text-center leading-tight">

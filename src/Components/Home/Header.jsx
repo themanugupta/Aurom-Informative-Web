@@ -20,6 +20,18 @@ function Header() {
 
     }
 
+    const scrollToPercentage = (percentage) => {
+      const documentHeight = document.body.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const scrollHeight = documentHeight - windowHeight;
+
+      window.scrollTo({
+        top: scrollHeight * (percentage / 100),
+        behavior: "smooth",
+      });
+    };
+    
+
     return (
       <>
         <div className="black-overlay"></div>
@@ -93,6 +105,27 @@ function Header() {
             </div>
             <div className="hidden md:flex btn">
               <button
+              onClick={()=>{
+                let pathname = window.location.pathname;
+                console.log("pathname", pathname);
+                if (pathname == "/OurListeners") {
+                  // document.getElementById("Connect").scrollIntoView({
+                  //   behavior: "smooth",
+                  // });
+                  scrollToPercentage(50);
+                }
+                else if (pathname == "/OurBlogs") {
+                  // document.getElementById("Connect").scrollIntoView({
+                  //   behavior: "smooth",
+                  // });
+                  scrollToPercentage(30);
+
+                  // scrollToPercentage(65); 
+                }else{
+                  scrollToPercentage(65);
+                }
+
+              }}
                 className="text-[18px] border text-[#d9d9d9] hover:bg-[#d9d9d9] hover:text-[#111111] border-white rounded-[40px] px-7 py-[7px]"
                 type="button"
               >
