@@ -109,18 +109,13 @@ function Header() {
                 let pathname = window.location.pathname;
                 console.log("pathname", pathname);
                 if (pathname == "/OurListeners") {
-                  // document.getElementById("Connect").scrollIntoView({
-                  //   behavior: "smooth",
-                  // });
+                 
                   scrollToPercentage(50);
                 }
                 else if (pathname == "/OurBlogs") {
-                  // document.getElementById("Connect").scrollIntoView({
-                  //   behavior: "smooth",
-                  // });
+                 
                   scrollToPercentage(30);
 
-                  // scrollToPercentage(65); 
                 }else{
                   scrollToPercentage(65);
                 }

@@ -82,7 +82,7 @@ function Ourlistener() {
       <div
         className={`heading ${
           isLgScreen
-            ? "text-[60px] flex py-20 gap-4"
+            ? "text-[50px] flex py-20 gap-4"
             : "text-[30px] flex flex-col py-12 "
         }   justify-center items-center   font-semibold`}
       >
