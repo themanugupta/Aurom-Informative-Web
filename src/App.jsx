@@ -10,6 +10,9 @@ import Listenerdesc from "./Components/Listnerdesc/Listenerdesc";
 import ScrollToTop from "./Components/Scrolltotop/Scrolltotop";
 import Blogsdescription from "./Pages/Blogsdescription";
 import BecomeListener from "./Pages/BecomeListener";
+import DeleteAccountPage from './Pages/DeleteAccountPage';
+import PrivacyPolicyPage from "./Pages/PrivacyPolicy";
+
 
 function App() {
   return (
@@ -24,6 +27,10 @@ function App() {
         <Route path="/:Ourlistener" element={<Listenersdescription />} />
         <Route path="/Blogsdesc" element={<Blogsdescription />} />
         <Route path="/BecomeListener" element={<BecomeListener />} />
+
+<Route path="/delete-account" element={<DeleteAccountPage />} />
+<Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+
       </Routes>
     </BrowserRouter>
   );
