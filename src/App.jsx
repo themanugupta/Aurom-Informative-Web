@@ -12,6 +12,7 @@ import Blogsdescription from "./Pages/Blogsdescription";
 import BecomeListener from "./Pages/BecomeListener";
 import DeleteAccountPage from './Pages/DeleteAccountPage';
 import PrivacyPolicyPage from "./Pages/PrivacyPolicy";
+import DeepLinkRedirect from "./Pages/DeepLinkRedirect";
 
 
 function App() {
@@ -24,8 +25,10 @@ function App() {
 
         <Route path="/OurListeners" element={<OurListeners />} />
         <Route path="/OurBlogs" element={<OurBlogs />} />
+        <Route path="/refer" element={<DeepLinkRedirect />} />
+        <Route path="/shareprofile" element={<DeepLinkRedirect />} />
         <Route path="/:Ourlistener" element={<Listenersdescription />} />
-        <Route path="/Blogsdesc" element={<Blogsdescription />} />
+        <Route path="/Blogsdesc/:blogId" element={<Blogsdescription />} />
         <Route path="/BecomeListener" element={<BecomeListener />} />
 
 <Route path="/delete-account" element={<DeleteAccountPage />} />

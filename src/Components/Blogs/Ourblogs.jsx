@@ -18,7 +18,7 @@ function Ourblogs() {
 
 
   const handleViewBlogDesc=(item)=>{
-    navigate("/Blogsdesc", {
+    navigate(`/Blogsdesc/${item._id}`, {
       state: item,
     });
   }

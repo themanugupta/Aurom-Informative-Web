@@ -1,15 +1,48 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom';
 
 function Blogsdesc() {
       const [isLgScreen, setIsLgScreen] = useState(window.innerWidth >= 1024);
-      const params = useParams();
+      const { blogId } = useParams();
 
       const { state } = useLocation();
-      const item = state;
+      const [item, setItem] = useState(state);
+      const [loading, setLoading] = useState(!state);
 
-      console.log("item", item);
+      useEffect(() => {
+        if (!state && blogId) {
+          const fetchBlog = async () => {
+            try {
+              const response = await fetch(`https://backend.auromapp.com/api/blogs/${blogId}`);
+              if (!response.ok) throw new Error('Failed to fetch blog');
+              const data = await response.json();
+              setItem(data?.blog || data);
+            } catch (error) {
+              console.error('Error fetching blog:', error.message);
+            } finally {
+              setLoading(false);
+            }
+          };
+          fetchBlog();
+        }
+      }, [blogId, state]);
   
+  if (loading) {
+    return (
+      <div className="py-[100px] text-[#d9d9d9] flex justify-center items-center min-h-[50vh]">
+        <span className="text-[20px]">Loading blog...</span>
+      </div>
+    );
+  }
+
+  if (!item) {
+    return (
+      <div className="py-[100px] text-[#d9d9d9] flex justify-center items-center min-h-[50vh]">
+        <span className="text-[20px]">Blog not found.</span>
+      </div>
+    );
+  }
+
   return (
     <div
       className={`lg:w-[60%] ${
@@ -29,10 +62,10 @@ function Blogsdesc() {
       </div>
       <div className="desc text-[20px] font-normal">{item.description}</div>
 
-      {item?.additionalSections.map((item, index) => (
-        <div>
-          <h3 className="text-[32px] font-bold pb-[24px]">{item.heading}</h3>
-          <span className="desc text-[20px] font-normal">{item?.brief}</span>
+      {item?.additionalSections?.map((section, index) => (
+        <div key={index}>
+          <h3 className="text-[32px] font-bold pb-[24px]">{section.heading}</h3>
+          <span className="desc text-[20px] font-normal">{section?.brief}</span>
         </div>
       ))}
       {/* <div>
