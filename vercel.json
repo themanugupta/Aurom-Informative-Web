@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/.well-known/apple-app-site-association",
+      "destination": "/.well-known/apple-app-site-association.json"
+    },
+    {
       "source": "/((?!api|_next|_static|_vercel|\\.well-known|[\\w-]+\\.\\w+).*)",
       "destination": "/index.html"
     }
